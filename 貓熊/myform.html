@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>问卷调查</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>熊猫问卷调查</h1>
+    <form action="">
+      <label for="getName">姓名：</label>
+      <input
+        id="getName"
+        type="text"
+        name="inputName"
+        placeholder="请填写真实姓名"
+        required
+      />
+      <br />
+      <label for="geTele">电话：</label>
+      <input
+        id="getTele"
+        type="text"
+        name="inputTele"
+        placeholder="请加区号"
+        required
+      />
+      <br />
+      <label for="email">邮件：</label>
+      <input
+        id="email"
+        type="email"
+        name="emails"
+        value=""
+        placeholder="请使用国内邮件"
+        required
+      />
+      <br />
+      <label for="age">年龄：</label>
+      <input
+        id="age"
+        type="number"
+        name="age"
+        value="18"
+        min="6"
+        max="150"
+        required
+      />
+      <br />
+      <label for="heigth">身高：</label>
+      <input
+        id="height"
+        type="number"
+        name="heigth"
+        value="1.60"
+        min="1.20"
+        max="3.00"
+        step="0.01"
+      />
+      <br />
+      <label for="gender">性别：</label>
+      <select name="gender" id="gender" required>
+        <option value=""></option>
+        <option value="male">男性</option>
+        <option value="female">女性</option>
+        <option value="other">其他</option>
+      </select>
+      <br />
+      <label for="area">住址：</label>
+      <input list="areaList" id="area" type="text" name="area" required />
+      <datalist id="areaList">
+        <option value="河西区">河西区</option>
+        <option value="和平区">和平区</option>
+        <option value="南开区">南开区</option>
+        <option value="东丽区">东丽区</option>
+        <option value="滨海新区">滨海新区</option>
+      </datalist>
+      <br />
+
+      <input id="dingyue" type="checkbox" name="dingYue" value="" checked />
+      <label for="dingyue">订阅熊猫杂志</label>
+      <br />
+      <label for="pwd">密码：</label>
+      <input
+        id="pwd"
+        type="password"
+        name="pwd"
+        maxlength="20"
+        minlength="8"
+        placeholder="我们不会保存你的密码"
+        required
+      />
+      <button type="submit">提交</button>
+      <br /><br />
+      <label for="suggestion">对我们的网站提出建议：</label>
+      <br />
+      <textarea
+        name="suggestion"
+        id="suggestion"
+        cols="30"
+        rows="10"
+        placeholder="请在这里输入文字："
+      ></textarea>
+    </form>
+    <p>谢谢您的建议！</p>
+  </body>
+</html>

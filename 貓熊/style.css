@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "qingsong";
+  src: url(../资源文件/清松手寫體1.ttf);
+}
+* {
+  font-family: "qingsong", "宋体";
+  /* 后面这个宋体是以防万一，一般 font-family 的位置都要写三个字体 */
+}
+html {
+  scroll-behavior: smooth;
+}
+.pic {
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+
+table,
+tr {
+  border-bottom: 2px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: lightblue;
+  padding: 1.5rem;
+}
+
+tr:hover {
+  background-color: cadetblue;
+  color: white;
+}
+
+h1,
+h2 {
+  /* property time timingfunction */
+  transition: all 2s ease-in-out;
+}
+.try:hover {
+  background-color: green;
+  color: aliceblue;
+}

@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+$themeColor: green;
+
+@import "./header.scss";
+@mixin display($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+div.link {
+  @include display(row);
+}
+
+.pic {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
